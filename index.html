@@ -57,7 +57,7 @@
             <!--Секція з банером-->
             <div class="container">
                 <h1 class="title-banner">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button-open-form" type="button">Замовити послугу</button>
+                <button data-modal-open class="button-open-form" type="button">Замовити послугу</button>
             </div>
         </section>
 
@@ -110,14 +110,23 @@
                         <li class="item-list-img">
                             <img class="image-list-work" src="./images/homepage-image/image1.jpg"
                                 alt="Приклад процесу роботи" width="370" height="294">
+                            <div class="box-list-work">
+                                <p class="text-list">Десктопні додатки</p>
+                            </div>
                         </li>
                         <li class="item-list-img">
                             <img class="image-list-work" src="./images/homepage-image/image2.jpg"
                                 alt="Приклад процесу розробки дизайну" width="370" height="294">
+                                <div class="box-list-work">
+                                    <p class="text-list">Мобільні додатки</p>
+                                </div>
                         </li>
                         <li class="item-list-img">
                             <img class="image-list-work" src="./images/homepage-image/image3.jpg"
                                 alt="Приклад процесу вибору кольору для макета" width="370" height="294">
+                                <div class="box-list-work">
+                                    <p class="text-list">Дизайнерські рішення</p>
+                                </div>
                         </li>
                     </ul>
             </div>
@@ -365,9 +374,17 @@
                 </ul>
             </div>
         </div>
-        
     </footer>
 
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button data-modal-close class="button-modal" type="button">
+        </button>
+    </div>
+</div>
+
+
+    <script src="./modal.js"></script>
 </body>
 
 </html>
